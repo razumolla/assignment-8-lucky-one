@@ -38,9 +38,14 @@ const AllBags = () => {
         const newProduct = [...bags, bag];
         setBags(newProduct);
     }
-    // const handleChoose = () => {
-
-    // }
+    const handleChoose = () => {
+        if (bags.length > 0) {
+            const luckyIndex = [Math.floor(Math.random() * bags.length)];
+            setBags([bags[luckyIndex]]);
+        } else {
+            alert('Please! Choose Your Favorite Product')
+        }
+    }
     const handleClearItem = () => {
         setBags([]);
     }
@@ -55,7 +60,8 @@ const AllBags = () => {
                     > </SingleBag>)
                 }
             </div>
-            <div className='selected-bag'>
+
+            <div className='selected-item'>
                 <h1>Order Summary</h1>
                 {
                     bags.map(bag => <Order
@@ -64,7 +70,8 @@ const AllBags = () => {
                     > </Order>)
                 }
                 <div className='btn' >
-                    <button className='lucky-btn' > Choose 1 For You </button>
+                    <button className='lucky-btn'
+                        onClick={() => handleChoose()}> Choose Lucky One </button>
                 </div>
                 <div className='btn'>
                     <button className='clear-btn'

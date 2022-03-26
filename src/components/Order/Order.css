@@ -1,5 +1,5 @@
 .container{
-    background-color: aliceblue;
+    background-color: rgb(211, 232, 250);
     margin-left: 20px;
     border-radius: 10px;
 }
@@ -7,7 +7,6 @@
    display: flex;
    align-items: center;
     padding-left: 20px;
-    
 }
 .image{
     padding-right: 10px;

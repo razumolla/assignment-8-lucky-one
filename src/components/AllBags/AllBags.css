@@ -22,9 +22,11 @@
 
 
 /* right section */
-.selected-bag{
+.selected-item{
     background-color: rgb(159, 207, 248);
     padding: 10px;
+    position: sticky;
+    top: 10px;
 }
 .btn{
 

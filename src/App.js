@@ -1,5 +1,6 @@
 import './App.css';
 import AllBags from './components/AllBags/AllBags';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className='main-section'>
       <Header></Header>
       <AllBags></AllBags>
+      <Footer> </Footer>
     </div>
   );
 }

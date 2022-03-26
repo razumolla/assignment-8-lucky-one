@@ -6,7 +6,6 @@ const Order = ({ bag }) => {
     const { img, name } = bag;
 
     return (
-
         <div className='order'>
             <div className='image'>
                 <img height={40} width={40} src={img} alt="" />
@@ -14,7 +13,6 @@ const Order = ({ bag }) => {
             <div>
                 <p>{name} </p>
             </div>
-
         </div>
     );
 };

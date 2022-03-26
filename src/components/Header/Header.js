@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div className='header'>
             <p className='confused'>Online Shopping</p>
-            <p className='bag'> Choose 4 Bags</p>
+            <p className='bag'> Choose Your Favorite Product</p>
         </div>
     );
 };
