@@ -1,0 +1,17 @@
+.container{
+    background-color: aliceblue;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.order{
+   display: flex;
+   align-items: center;
+    padding-left: 20px;
+    
+}
+.image{
+    padding-right: 10px;
+}
+.image img{
+    border-radius: 20px;
+}

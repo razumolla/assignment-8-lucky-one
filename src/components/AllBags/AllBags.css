@@ -1,10 +1,38 @@
 .main-container{
     display: grid;
     grid-template-columns: 4fr  1fr;
+    position: relative;
 }
 .all-bags{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 45px;
     margin: 50px 50px;
+}
+@media screen and (max-width:576px){
+    .all-bags{
+        grid-template-columns: 1fr ;
+    } 
+}
+@media (min-width:576px) and (max-width:768px){
+    .all-bags{
+        grid-template-columns:2fr 1fr ;
+    } 
+}
+
+
+/* right section */
+.selected-bag{
+    background-color: rgb(159, 207, 248);
+    padding: 10px;
+}
+.btn{
+
+    text-align: center;
+}
+
+.lucky-btn , .clear-btn{
+    font-size: 18px;
+    color: blue;
+    margin-top: 20px;
 }

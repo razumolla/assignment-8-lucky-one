@@ -38,7 +38,12 @@ const AllBags = () => {
         const newProduct = [...bags, bag];
         setBags(newProduct);
     }
+    // const handleChoose = () => {
 
+    // }
+    const handleClearItem = () => {
+        setBags([]);
+    }
     return (
         <div className='main-container'>
             <div className='all-bags'>
@@ -50,7 +55,6 @@ const AllBags = () => {
                     > </SingleBag>)
                 }
             </div>
-
             <div className='selected-bag'>
                 <h1>Order Summary</h1>
                 {
@@ -59,6 +63,13 @@ const AllBags = () => {
                         key={bag.id}
                     > </Order>)
                 }
+                <div className='btn' >
+                    <button className='lucky-btn' > Choose 1 For You </button>
+                </div>
+                <div className='btn'>
+                    <button className='clear-btn'
+                        onClick={() => handleClearItem()}>Clear Selected Item </button>
+                </div>
             </div>
         </div>
     );
