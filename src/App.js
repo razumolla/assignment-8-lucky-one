@@ -1,9 +1,12 @@
 import './App.css';
+import Header from './components/Header/Header';
+import AllBags from './components/AllBags/AllBags';
 
 function App() {
   return (
     <div>
-      <h1>shop online</h1>
+      <Header></Header>
+      <AllBags> </AllBags>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(235, 238, 241);
+}
+.header{
+    text-align: center;
+
+    border: 1px solid;
+}
+.confused{
+    color: rgb(255, 55, 255);
+    font-size: 40px;
+    margin: 0;
+}
+.bag {
+    font-size: 30px;
+    margin-top: 0;
+}

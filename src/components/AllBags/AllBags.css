@@ -1,0 +1,10 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 4fr  1fr;
+}
+.all-bags{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 45px;
+    margin: 10px 50px;
+}
