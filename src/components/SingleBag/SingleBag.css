@@ -1,0 +1,39 @@
+.container{
+    border: 2px solid rgb(23, 82, 245);
+    border-radius: 20px;
+}
+.image{
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.bag-info{
+    padding-left: 20px;
+}
+
+.cart-btn{
+  border: none;
+ border-radius:0 0 15px 15px ;
+    font-size: 20px;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(71, 71, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-btn:hover{
+    cursor: pointer;
+}
+.cart-btn p{
+    color: white;
+    padding-right: 10px;
+    margin: 0;
+    background-color: rgb(71, 71, 241);
+}
+.icon{
+    font-size:1.5em;
+    background-color: rgb(71, 71, 241) ;
+    color: white;
+}
