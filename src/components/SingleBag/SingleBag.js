@@ -3,8 +3,9 @@ import './SingleBag.css';
 import { BsCartCheck } from 'react-icons/bs';
 
 const SingleBag = (props) => {
-    console.log(props.bag);
-    const { name, img, price } = props.bag;
+    // console.log(props.bag);
+    const { handleAddToCart, bag } = props;
+    const { name, img, price } = bag;
     return (
         <div className='container'>
             <div className='image'>
@@ -15,7 +16,7 @@ const SingleBag = (props) => {
                 <p>Price: ${price}</p>
             </div>
 
-            <button className='cart-btn'>
+            <button onClick={() => handleAddToCart(bag)} className='cart-btn'>
                 <p>Add to Cart</p>
                 <BsCartCheck className='icon' />
             </button>
